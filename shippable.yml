@@ -26,3 +26,13 @@ build:
    
   ci:
     - lein version
+integrations:
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+         - revathi@shippable.com
+      on_start: never
+      on_pull_request: always
+      on_success: always
+      on_failure: always  
