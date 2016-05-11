@@ -8,5 +8,3 @@ lein:
 build:
   ci:
     - lein version
-    
-    
