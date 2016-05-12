@@ -9,7 +9,13 @@ build:
   ci:
     - lein version
 integrations:    
-   notifications:
+  notifications:
+    - integrationName: sampleclo-issues
+      type: webhook
+      payload:
+        - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
+        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
+
     - integrationName: email
       type: email
       recipients:
