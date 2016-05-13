@@ -9,35 +9,27 @@ build:
   ci:
     - lein version
 integrations:    
-  #notifications:
+  notifications:
    # - integrationName: sampleclo-issues
     #  type: webhook
      # payload:
       #  - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
        # - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
 
-    - integrationName: email
-      type: email
-      recipients:
-         - revathi@shippable.com
-      on_start: never
-      on_pull_request: always
-      on_success: always
-      on_failure: always   
           
-    - integrationName: ship-slack
-      type: slack
-      recipients:
-         - "#random"
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always 
+    #- integrationName: ship-slack
+     # type: slack
+      #recipients:
+       #  - "#random"
+      #on_start: always
+      #on_pull_request: always
+      #on_success: always
+      #on_failure: always 
     - integrationName: ship-hipchat-room-user
       type: hipchat
       recipients:
          - '#Private-room'
-         - '@shiphitchcock3'
+         #- '@shiphitchcock3'
       on_success: always
       on_failure: never
       
