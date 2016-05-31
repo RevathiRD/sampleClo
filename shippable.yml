@@ -8,6 +8,11 @@ lein:
 build:
   ci:
     - lein version
+  pre_ci_boot:
+    image_name: shippabledocker/hitchcock3_sample_node11
+    image_tag: latest
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 #integrations:    
  # notifications:
    # - integrationName: sampleclo-issues
