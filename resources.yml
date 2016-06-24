@@ -6,3 +6,24 @@ resources:
       name: "revathird/sample_node"
       isPull: true
       tag: latest
+  - name: imagey-test
+    type: image
+    integration: docker-integration
+    source:
+      name: "revathird/sample_node"
+      isPull: true
+      tag: latest
+  - name: imagez-test
+    type: image
+    integration: docker-integration
+    source:
+      name: "revathird/sample_node"
+      isPull: true
+      tag: latest
+  - name: imagew-test
+    type: image
+    integration: docker-integration
+    source:
+      name: "revathird/sample_node"
+      isPull: true
+      tag: latest
