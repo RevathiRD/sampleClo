@@ -1,0 +1,8 @@
+resources:
+  - name: imagex-test
+    type: image
+    integration: docker-integration
+    source:
+      name: "revathird/sample_node"
+      isPull: true
+      tag: latest
