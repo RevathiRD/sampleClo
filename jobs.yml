@@ -7,5 +7,5 @@ jobs:
   - name: job-y
     type: manifest
     steps:
-      - PUT: imagew-test
+      - GET: imagew-test
      # - PUT: imagez-test
