@@ -8,4 +8,4 @@ jobs:
     type: manifest
     steps:
       - PUT: imagew-test
-      - PUT: imagez-test
+     # - PUT: imagez-test
