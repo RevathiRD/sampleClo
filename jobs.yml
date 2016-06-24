@@ -2,4 +2,4 @@ jobs:
   - name: job-x
     type: manifest
     steps:
-      - GET: image1-test
+      - GET: imagex-test
