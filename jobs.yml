@@ -3,3 +3,9 @@ jobs:
     type: manifest
     steps:
       - GET: imagex-test
+      - GET: imagey-test
+  - name: job-y
+    type: manifest
+    steps:
+      - PUT: imagew-test
+      - PUT: imagez-test
