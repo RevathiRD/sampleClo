@@ -33,9 +33,7 @@ build:
        #  - '#Private-room'
          #- '@shiphitchcock3'
       #on_success: always
-      #on_failure: never
-      
-      
+      #on_failure: neve
       
       
       
