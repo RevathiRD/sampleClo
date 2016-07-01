@@ -8,7 +8,9 @@ lein:
 build:
   ci:
     - lein version
+
 #integrations:    
+
  # notifications:
    # - integrationName: sampleclo-issues
     #  type: webhook
