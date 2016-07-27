@@ -20,9 +20,9 @@ integrations:
       payload:
         - tag=$BUILD_NUMBER
       on_success: never
-      on_failure: never
-      on_pull_request: never
-      on_start: never
+     # on_failure: never
+      #on_pull_request: never
+      #on_start: never
     #- integrationName: r1-trigger
      # type: webhook
       #payload:
