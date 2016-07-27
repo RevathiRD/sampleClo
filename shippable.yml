@@ -19,7 +19,7 @@ integrations:
       type: webhook
       payload:
         - tag=$BUILD_NUMBER
-      on_success: never
+      on_success: change
      # on_failure: never
       #on_pull_request: never
       #on_start: never
