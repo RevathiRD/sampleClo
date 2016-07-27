@@ -13,6 +13,17 @@ build:
   ci:
     - lein version
 
+integrations:
+  notifications:
+    - integrationName: test-resource
+      type: webhook
+      payload:
+        - tag=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+      on_success: always
+      on_failure: never
+      on_pull_request: never
+      on_start: never
+
 #integrations:    
 
  # notifications:
