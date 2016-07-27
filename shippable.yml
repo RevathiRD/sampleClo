@@ -12,6 +12,7 @@ env:
 build:
   ci:
     - lein version
+    fgkg
 
 integrations:
   notifications:
