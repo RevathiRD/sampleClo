@@ -23,11 +23,11 @@ integrations:
       on_failure: never
       on_pull_request: never
       on_start: never
-    - integrationName: r1-trigger
-      type: webhook
-      payload:
-        - tag=$BUILD_NUMBER
-      on_success: always
+    #- integrationName: r1-trigger
+     # type: webhook
+      #payload:
+       # - tag=$BUILD_NUMBER
+      #on_success: always
  # notifications:
    # - integrationName: sampleclo-issues
     #  type: webhook
