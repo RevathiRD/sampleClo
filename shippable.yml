@@ -20,6 +20,11 @@ integrations:
       type: webhook
       payload:
         - versionName=$BUILD_NUMBER
+        
+    - integrationName: test-cipipe1
+      type: webhook
+      payload:
+        - versionName=$BUILD_NUMBER
       #on_failure: change
       #on_failure: always
     #  on_start: always
