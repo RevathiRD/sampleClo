@@ -21,6 +21,7 @@ integrations:
       type: webhook
       payload:
         - versionName=$foo
+      on_pull_request: always
         
     # - integrationName: test-cipipe1
     #   type: webhook
