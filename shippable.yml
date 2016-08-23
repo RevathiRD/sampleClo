@@ -8,6 +8,7 @@ lein:
 env:
   matrix:
     - secure: d4zmokBHGrVgDynNMiD+E3aCJW1Mlv1tQd07Pk+Iist57NWwglH31Ayubx/2P7Mc9eY7LgbNKszbRaRqxeT0fMahuQ3sk511k8cAbexB2gHecyX4PLYVmJ/o/P51cj6b9tJLQ70dPsoWSl2C0THS1Anv1UTFNizc4qNmXzgw4x8rF3mS69DKjs+OB9Z/ZxmwEnm1UAgnkAzcHgNXiScupCZewTRnt7IsmBxqVFgiEOCAmh2wuEdq6o8qwGJCnYFhkO/4tToq0vcfS9SwCSmumGLYrKzvbgxhkhSiWcO/PYVQcZeFjiDW9usg73oY7FG+VoO0iJZ4fruutc0orjaKHQ==
+    - foo=bar
     #- m1=one
 build:
   ci:
@@ -19,7 +20,7 @@ integrations:
     - integrationName: test-cipipe
       type: webhook
       payload:
-        - versionName=$BUILD_NUMBER
+        - versionName=$foo
         
     - integrationName: test-cipipe1
       type: webhook
