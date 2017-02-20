@@ -5,54 +5,13 @@ language: clojure
 # Version number
 lein:
   - lein2
-env:
-  matrix:
-   
-    - foo=bar
-    #- m1=one
+
 build:
   ci:
     - lein version
-   # - fgkg
+ 
 
 
-    # - integrationName: test-cipipe1
-    #   type: webhook
-    #   payload:
-    #     - versionName=$foo
-      #on_failure: change
-      #on_failure: always
-    #  on_start: always
-    #  on_start: never
-      #on_start: never
-    #- integrationName: r1-trigger
-     # type: webhook
-      #payload:
-       # - tag=$BUILD_NUMBER
-      #on_success: always
- # notifications:
-   # - integrationName: sampleclo-issues
-    #  type: webhook
-     # payload:
-      #  - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
-       # - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
-
-          
-    #- integrationName: ship-slack
-     # type: slack
-      #recipients:
-       #  - "#random"
-      #on_start: always
-      #on_pull_request: always
-      #on_success: always
-      #on_failure: always 
-    #- integrationName: ship-hipchat-room-user
-     # type: hipchat
-      #recipients:
-       #  - '#Private-room'
-         #- '@shiphitchcock3'
-      #on_success: always
-      #on_failure: neve
       
       
       
